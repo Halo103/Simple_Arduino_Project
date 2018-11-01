@@ -12,7 +12,7 @@
   modified 8 May 2014
   by Scott Fitzgerald
  */
-
+int blink_time = 500;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -24,10 +24,10 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(5, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);              // wait for a second
+  delay(blink_time);              // wait for a second
   digitalWrite(5, LOW);    // turn the LED off by making the voltage LOW
   digitalWrite(6, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(1000);              // wait for a second
+  delay(blink_time);              // wait for a second
   digitalWrite(6, LOW);   // turn the LED off by making the voltage LOW
-  delay(1000);
+  delay(blink_time);
 }
